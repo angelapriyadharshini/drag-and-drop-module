@@ -8,10 +8,14 @@ import { ItemBoxService } from 'src/app/services/itembox-service';
 })
 export class ItemboxComponent implements OnInit {
 
+  expandedItemIndex:number;
   items: any;
   value: any;
+  isExpanded = false;
 
-  constructor(private itemBoxService: ItemBoxService) { }
+  constructor(private itemBoxService: ItemBoxService) {
+    this.expandedItemIndex = -1;
+  }
 
   ngOnInit() {
     this.getAllItems();
@@ -23,5 +27,9 @@ export class ItemboxComponent implements OnInit {
       this.value = data[0].values;
       console.log(this.value);
     });
+  }
+
+  toggleSection(index) {
+    this.expandedItemIndex = index === this.expandedItemIndex ? -1 : index;
   }
 }
