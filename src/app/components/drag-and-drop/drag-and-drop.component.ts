@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../../services/data-service';
 
 @Component({
   selector: 'app-drag-and-drop',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DragAndDropComponent implements OnInit {
 
-  constructor() { }
+  receipes: any;
+
+  constructor(private dataService: DataService) { }
 
   ngOnInit() {
+    this.getAllReceipes();
+  }
+
+  getAllReceipes() {
+    this.dataService.getAllReceipes().subscribe(data => {
+      this.receipes = data;
+      console.log(data[0].name);
+    });
   }
 
 }

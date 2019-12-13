@@ -1,0 +1,8 @@
+<div *ngFor="let item of items">
+  <div class="item-parent">
+    <span [ngClass]="{'item-parent-title': item.values?.length > 0}">{{item.name}}</span>
+  <div class="item-child" *ngFor="let values of item.values">
+      <span>{{values.name}}</span>
+    </div>
+  </div>
+</div>
