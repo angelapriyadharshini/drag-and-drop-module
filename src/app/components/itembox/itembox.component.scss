@@ -1,0 +1,10 @@
+.item-parent-title::before {
+    // content: '\25BC';
+    content: '\25B6';
+    padding-right: 5px;
+    font-size: 9px;
+}
+
+.item-child {
+    padding-left: 20px;
+}
