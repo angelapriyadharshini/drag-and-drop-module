@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "name": "Colors",
+        "values": [
+                { "id": "101", "name": "Purple" },
+                { "id": "102", "name": "Lilac" },
+                { "id": "103", "name": "Pink" },
+                { "id": "104", "name": "Grey" },
+                { "id": "105", "name": "Blue" },
+                { "id": "106", "name": "Yellow" },
+                { "id": "107", "name": "Orange" },
+                { "id": "108", "name": "Brown" },
+                { "id": "109", "name": "White" }
+            ]
+    },
+    {
+        "id": 2,
+        "name": "Flavors",
+        "values": [
+                { "id": "101", "name": "Vanilla" },
+                { "id": "102", "name": "Chocolate" },
+                { "id": "103", "name": "Lemon" },
+                { "id": "104", "name": "Strawberry" },
+                { "id": "105", "name": "Blueberry" },
+                { "id": "106", "name": "Apple" },
+                { "id": "107", "name": "Orange" },
+                { "id": "108", "name": "Custard" },
+                { "id": "109", "name": "Mint" }
+            ]
+    },
+    {
+        "id": 3,
+        "name": "Categories",
+        "values": [
+                { "id": "101", "name": "Cake" },
+                { "id": "102", "name": "Pudding" },
+                { "id": "103", "name": "Cupcake" },
+                { "id": "104", "name": "Muffin" },
+                { "id": "105", "name": "Tart" },
+                { "id": "106", "name": "Donut" },
+                { "id": "107", "name": "Puff" },
+                { "id": "108", "name": "Pastry" },
+                { "id": "109", "name": "Cookie" }
+            ]
+    }
+]
